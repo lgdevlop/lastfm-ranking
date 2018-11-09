@@ -1,24 +1,25 @@
 # Tops Last.FM
 
-### Para inicializar
+- **Para inicializar:**
 
-- **NPM:**
-  - `npm i`
-- **YARN:**
-  - `yarn`
+  - **NPM:**
+    - `npm i`
+  - **YARN:**
+    - `yarn`
 
-### Para buildar
+- **Para buildar:**
 
-- **NPM:**
-  - `npm run build`
-- **YARN:**
-  - `yarn build`
+  - **NPM:**
+    - `npm run build`
+  - **YARN:**
+    - `yarn build`
 
-### Para subir servidor express para servir o conteudo buildado
+- **Para subir servidor express para servir o conteudo buildado:**
 
-- **NPM:**
-  - `npm run server`
-- **YARN:**
-  - `yarn server`
+  - **NPM:**
+    - `npm run server`
+  - **YARN:**
+    - `yarn server`
 
-**Entrar em src/client/services/apiService.js e colocar sua API da Last.fm**
+- **Entrar em src/client/services/apiService.js e colocar sua API da Last.fm**
+- **Webapp rodará na porta 8080, link: <http://localhost:8080>**
