@@ -23,3 +23,4 @@
 
 - **Entrar em src/client/services/apiService.js e colocar sua API da Last.fm**
 - **Webapp rodará na porta 8080, link: <http://localhost:8080>**
+- **Aplicação em desenvolvimento**
