@@ -1,0 +1,53 @@
+.floating-menu {
+  visibility: hidden;
+  position: absolute;
+  /* top: 95px; bottom search-bar + 6,5px */
+  /* left: 890px; left search-bar + 20px */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  width: 315px;
+  /* height: auto; */
+  background-color: #CCCE;
+}
+div .floating-menu_visibility {
+  visibility: visible;
+}
+
+.floating-menu__container {
+  text-decoration: none;
+  text-align: right;
+}
+.floating-menu__close {
+  cursor: pointer;
+}
+
+.seta {
+  position: absolute;
+  margin-left: -7px;
+  border-width: 7px;
+  border-style: solid;
+}
+
+.seta_cima {
+  bottom: 100%;
+  left: 50%;
+  border-color: transparent transparent #CCCE transparent;
+}
+.seta_direita {
+  bottom: 50%;
+  left: 100%;
+  margin-left: 0;
+  margin-bottom: -5px;
+  border-color: transparent transparent transparent black;
+}
+.seta_baixo {
+  top: 100%;
+  left: 50%;
+  border-color: black transparent transparent transparent;
+}
+.seta_esquerda {
+  bottom: 50%;
+  right: 100%;
+  margin-bottom: -5px;
+  border-color: transparent black transparent transparent;
+}

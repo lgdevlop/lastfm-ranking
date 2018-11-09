@@ -1,0 +1,7 @@
+.artist-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 30px;
+  /* background-color: aquamarine; */
+  background-color: #FFF;
+}

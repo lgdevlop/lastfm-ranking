@@ -1,0 +1,9 @@
+.artist-info {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .01em;
+  color: #2f2f2f;
+  text-align: justify;
+}

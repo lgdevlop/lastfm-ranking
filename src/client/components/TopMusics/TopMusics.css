@@ -1,0 +1,10 @@
+.mais-escutadas {
+  /* height: 432px; */
+  /* background-color: #C32; */
+  /* background-color: #FFF; */
+  background-color: #080809;
+}
+.mais-escutadas__nav-control {
+  display: flex;
+  justify-content: center;
+}

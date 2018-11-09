@@ -1,0 +1,15 @@
+.nav-control__anchor:not(:first-of-type) {
+ padding-left: 5px;
+}
+
+.nav-control__link {
+  width: 15px;
+  height: 15px;
+  /* background-color: #e8e8e8; */
+  background-color: #9a9a9a;
+  border-radius: 50%;
+}
+.nav-control__link_selecionado {
+  /* background-color: #9a9a9a; */
+  background-color: #e8e8e8;
+}

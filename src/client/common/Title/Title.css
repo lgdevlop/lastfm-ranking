@@ -1,0 +1,14 @@
+.titulo {
+  font-family: 'Fira Sans';
+  font-size: 60px;
+  font-weight: 500;
+  color: rgb(47, 47, 47);
+  text-transform: uppercase;
+  text-align: center;
+}
+.titulo_destaque {
+  color: #d51007;
+}
+.titulo_top-musicas {
+  color: #FFF;
+}

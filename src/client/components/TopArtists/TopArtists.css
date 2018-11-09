@@ -1,0 +1,27 @@
+/* .titulo-artistas {
+  height: 195px;
+  /* background-color: #3A3;
+} */
+/* .mosaico-artistas {
+  height: 1001px;
+  /* background-color: #555;
+} */
+
+/* .top-artistas__row {
+  height: 200px;
+} */
+.container-artistas_destaque {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  /* background-color: #fff; */
+  /* grid-auto-rows: minmax(300px, auto); */
+}
+.container-artistas {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  /* grid-auto-rows: minmax(300px, auto); */
+}

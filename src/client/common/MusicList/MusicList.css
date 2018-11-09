@@ -1,0 +1,12 @@
+.music-list {
+  font-family: 'Fira Sans';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #2f2f2f;
+  text-align: center;
+  list-style: none;
+}
+.music-list:nth-of-type(odd) {
+  background-color: #CCCE;
+}

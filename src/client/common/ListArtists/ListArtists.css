@@ -1,0 +1,26 @@
+.list-artist {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.list-artist__item {
+  text-align: center;
+  list-style: none;
+}
+.list-artist__item:hover {
+  background-color: #EEEE;
+}
+.list-artist__item:last-of-type {
+  margin-bottom: 10px;
+}
+.list-artist__link {
+  font-family: 'Fira Sans';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #2f2f2f;
+  text-decoration: none;
+}
+.list-artist__link:hover {
+  color: #d51007;
+}
+

@@ -1,0 +1,22 @@
+.header-app {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: space-between;
+  height: 123px;
+  /* background-color: #DF3; */
+  background-color: #EEE;
+  border-bottom: 1px solid #0004;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,.1);
+}
+
+.header__bar {
+  justify-self: end;
+}
+.header__search-bar {
+  height: 44px;
+  width: 351px;
+  /* background-color: rgb(255, 160, 51); */
+  /* margin-right: 42px; */
+}
