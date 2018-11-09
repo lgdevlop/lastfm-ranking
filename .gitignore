@@ -1,0 +1,16 @@
+node_modules
+*.log
+src
+src/client
+src/server
+dist
+config/webpack.config.js
+config
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.prettierrc.json
+package-lock.json
+package.json
+yarn.lock
