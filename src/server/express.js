@@ -3,6 +3,8 @@ const express = require('express') // eslint-disable-line
 const server = express()
 const publishing = express.static('./dist')
 
+server.get('/:id', (req, res) => res.send('ok'))
+
 server.use(publishing)
 
 server.listen(8080, () => {
