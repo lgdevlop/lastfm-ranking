@@ -1,3 +1,3 @@
 # Tops Last.FM
 
-- **Webapp link: <https://lgdevlop.com/lastfm-ranking/>**
+- **Webapp link: <https://lgdevlop.github.io/lastfm-ranking/>**
