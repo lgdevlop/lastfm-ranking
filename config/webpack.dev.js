@@ -32,22 +32,13 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          // options: {
-          //   presets: ['react']
-          // }
+          options: {
+            presets: ['react'],
+            cacheDirectory: true,
+            cacheCompression: false,
+          }
         },
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     {
-      //       loader: "style-loader"
-      //     },
-      //     {
-      //       loader: "css-loader"
-      //     }
-      //   ]
-      // },
       {
         test: /\.s?[ac]ss$/,
         use: [
