@@ -1,7 +1,5 @@
 var path = require("path");
-// const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const HtmlWebpackPlugin = require('html-webpack-plugin')
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
@@ -18,12 +16,11 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: "dist",
-    overlay: true
+    overlay: false
   },
   resolve: {
     extensions: [".js", ".jsx", ".json"]
   },
-  // devtool: "source-map", // Gera o source map para facilitar o debug, só funciona com a flag do UglifyJsPlugin setada tambem
   module: {
     rules: [
       {
@@ -36,24 +33,10 @@ module.exports = {
           }
         }
       },
-      // {
-      //   test: /\.css$/,
-      //   use: ExtractTextPlugin.extract({
-      //     fallback: "style-loader",
-      //     use: [
-      //       {
-      //         loader: "css-loader"
-      //         // loader: 'css-loader',
-      //         // options: { minimize: true }
-      //       }
-      //     ]
-      //   })
-      // },
+
       {
         test: /\.s?[ac]ss$/,
-        // use: ExtractTextPlugin.extract({
-        // use: MiniCssExtractPlugin.loader({
-        // fallback: "style-loader",
+     
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -63,7 +46,7 @@ module.exports = {
             loader: "sass-loader"
           }
         ]
-        // })
+  
       },
       {
         test: /\.html$/,
@@ -116,34 +99,15 @@ module.exports = {
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        // sourceMap: true, // Só funciona com a flag devtool do webpack setada tambem
         uglifyOptions: {
-          compress: false, // Diminui um pouco o tamanho do bundle
+          compress: false, 
           ecma: 6,
           mangle: false
-          // sourceMap: {
-          //   filename: "out.js",
-          //   url: "out.js.map"
-          // }
-          // mangle: {
-          //   // mangle options
-          //   eval: false,
-          //   keep_classnames: false,
-          //   keep_fnames: false,
-          //   reserved: [],
-          //   toplevel: false,
-          //   safari10: false,
-          //   // properties: {
-          //   //     // mangle property options
-          //   // }
-          // },
         }
-        // sourceMap: true
       })
     ]
   },
   plugins: [
-    // new ExtractTextPlugin({ filename: "./css/style.css" }),
     new MiniCssExtractPlugin({ filename: "./css/style.css" }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -151,11 +115,5 @@ module.exports = {
       cssProcessorOptions: { safe: true, discardComments: { removeAll: true } },
       canPrint: true
     })
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   hash: true,
-    //   template: './src/index.html',
-    //   filename: 'index.html'
-    // })
   ]
 };
