@@ -35,7 +35,6 @@ module.exports = {
           options: {
             presets: ['react'],
             cacheDirectory: true,
-            cacheCompression: false,
           }
         },
       },
