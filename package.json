@@ -6,17 +6,19 @@
   "repository": "git@github.com:lgdevlop/lastfm-ranking.git",
   "keywords": [],
   "license": "MPL-2.0",
-  "main": "index.js",
+  "main": "src/client/index.jsx",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "webpack --config=config/webpack.pro.js",
-    "dev": "webpack-dev-server --config=config/webpack.dev.js --progress --colors --inline --hot",
+    "build": "NODE_ENV=production webpack --config=webpack/prod-config.ts",
+    "dev": "NODE_ENV=development webpack serve --config=webpack/dev-config.ts --progress",
     "server": "node src/server/index.js",
     "test": "./node_modules/.bin/jest --env=jsdom",
     "lint": "eslint src/**/*.{js,jsx} --quiet",
     "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\""
   },
   "devDependencies": {
+    "@types/node": "18.11.9",
+    "@types/webpack": "5.28.0",
+    "@types/webpack-bundle-analyzer": "4.6.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^24.8.0",
@@ -41,6 +43,7 @@
     "file-loader": "^1.1.11",
     "flow-bin": "^0.79.1",
     "html-loader": "^0.5.5",
+    "html-webpack-plugin": "5.5.0",
     "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^7.0.3",
@@ -48,10 +51,13 @@
     "rimraf": "^2.6.3",
     "sass-loader": "10",
     "style-loader": "^0.21.0",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.4",
     "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.4.1"
+    "webpack": "5.74.0",
+    "webpack-bundle-analyzer": "4.7.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.11.1"
   },
   "dependencies": {
     "prettier": "^1.16.4",

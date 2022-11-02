@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "target": "ES2015",
+    "module": "CommonJS",
+    "paths": {
+      "components/*": ["./src/client/components/*"],
+      "hooks/*": ["./src/client/hooks/*"],
+      "lib/*": ["./src/client/lib/*"],
+      "utils/*": ["./src/client/utils/*"],
+      "recipes/*": ["./src/client/recipes/*"]
+    }
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
